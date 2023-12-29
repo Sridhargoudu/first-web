@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Sridhar Restarent</title>
+        <meta charset="Utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="ht.css">
+        <link rel="stylesheet" href="starrating.css">
+        <script src="https://kit.fontawesome.com/a76552d2fd.js" crossorigin="anonymous"></script>
+        <script>
+          // JavaScript for showing the Thank You pop-up
+          document.addEventListener('DOMContentLoaded', function () {
+              const feedbackForm = document.getElementById('feedbackForm');
+              const thankYouPopup = document.getElementById('thankYouPopup');
+      
+              feedbackForm.addEventListener('submit', function (event) {
+                  event.preventDefault(); // Prevents the form from submitting normally
+      
+                  // Show the Thank You pop-up
+                  thankYouPopup.style.display = 'block';
+              });
+          });
+      </script>
+      <style>
+        #thankYouPopup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+        .srating {
+    display: inline-block;
+  }
+
+  .srating input {
+    display: none;
+  }
+
+  .srating label {
+    font-size: 2em;
+    color: #f3ef03;
+    float: right;
+  }
+
+  .srating label:before {
+    content: '\2605'; /* Unicode character for a star */
+  }
+
+  .srating input:checked ~ label {
+    color: #09f329; /* Color of the selected star */
+  }
+        </style>
+    </head>
+<body>
+    <ul id="back" style="text-align:center">
+        <div>
+        <i class="fas fa-bar 2px"></i>
+        <li><a href="#home"><strong>Home</strong></a></li>
+        <li><a href="#menu"><strong>Menu</strong></a></li>
+        <li><a href="#feedback"><strong>Feedback</strong></a></li>
+        <li><a href="#contactus"><strong>Contact us</strong></a></li>
+    </div>
+<h1 id="home" style="text-align:center"><a href="#back"><img src="chares.jpg" alt="chares" width="1350px" height="750px"></a></h1>
+<hr>
+<figure>
+<p id="menu"><a href="#back" onclick="getLocation"><img src="biriyani.jpg" alt="biriyani" width="200px"; height="250px"></a><br>
+    <figcaption><strong>Biriyani</strong><div>
+      <form>
+        <label for="price">select your order</label><br>
+        <select id="price" name="price">
+          <option value="biriyani-150/-">Biriyani-150/-</option>
+          <option value="fry peace">Fry peace-180/-</option>
+          <option value="dum peace">Dum peace-170/-</option>
+          </select><br>
+          <input type="submit" value="submit">
+          </form>
+    </div></figcaption>
+<hr>
+<img src="chicken65.jpeg" alt="chicken65" width="200px" height="250px"><br>
+<figcaption><strong>Chicken65</strong><div>
+  <form>
+    <label for="price">select your order</label><br>
+    <select id="price" name="price">
+      <option value="biriyani-150/-">half plate-150/-</option>
+      <option value="fry peace">full plate-250/-</option>
+      <option value="dum peace">extra masala-170/-</option>
+      <option value="dum">extra masala full-270/-</option>
+      </select><br>
+      <input type="submit" value="submit">
+      </form>
+</div></figcaption>
+<hr>
+<img src="muttonmandi.jpeg" alt="muttonmandi" width="200px" height="250px"><br>
+<figcaption><strong>Mutton Mandi</strong><div>450/- for 2 heads</div></figcaption>
+<hr>
+<img src="fishfry.jpeg" alt="fishfry" width="200px" height="250px"><br>
+<figcaption><strong>Fish Fry</strong><div>300/-</div></figcaption>
+</p>
+<hr>
+<hr>
+<hr>
+<h1 id="feedback" style="color: black;">Please provide your valuable 5star rating</h1>
+<a href="#back"><img src="biriyani.jpg" alt="biriyani" width="100px"; height="100px"></a>
+<figcaption>
+<div class="rating">
+    <input type="radio" id="star5" name="rating" value="5">
+    <label for="star5"></label>
+    <input type="radio" id="star4" name="rating" value="4">
+    <label for="star4"></label>
+    <input type="radio" id="star3" name="rating" value="3">
+    <label for="star3"></label>
+    <input type="radio" id="star2" name="rating" value="2">
+    <label for="star2"></label>
+    <input type="radio" id="star1" name="rating" value="1">
+    <label for="star1"></label>
+  </div>
+  </figcaption>
+  <hr>
+  <h1 id="feedback" style="color: black;">Please provide your valuable 5star rating</h1>
+  <img src="chicken65.jpeg" alt="chicken65" width="100px"; height="100px">
+<figcaption>
+<div class="srating">
+    <input type="radio" id="star5" name="rating" value="5">
+    <label for="star5"></label>
+    <input type="radio" id="star4" name="rating" value="4">
+    <label for="star4"></label>
+    <input type="radio" id="star3" name="rating" value="3">
+    <label for="star3"></label>
+    <input type="radio" id="star2" name="rating" value="2">
+    <label for="star2"></label>
+    <input type="radio" id="star1" name="rating" value="1">
+    <label for="star1"></label>
+  </div>
+  </figcaption>
+  <hr>
+  <h1 id="feedback" style="color: black;">Please provide your valuable 5star rating</h1>
+  <img src="muttonmandi.jpeg" alt="muttonmandi" width="100px" height="100px">
+  <figcaption>
+    <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1"></label>
+      </div>
+      </figcaption>
+    <hr>
+    <h1 id="feedback" style="color: black;">Please provide your valuable 5star rating</h1>
+    <a href="#back"><img src="fishfry.jpeg" alt="fishfry" width="100px" height="100px"></a>
+    <figcaption>
+        <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5"></label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4"></label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3"></label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2"></label>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1"></label>
+          </div>
+          </figcaption>
+          <!-- Feedback Form -->
+<form id="feedbackForm">
+  <label for="feedback">Feedback:</label><br>
+  <textarea id="feedback" name="feedback" rows="10" cols="30" placeholder="Please submit your feedback" required></textarea><br>
+  <button type="submit">Submit</button>
+</form>
+            <!-- Thank You Pop-up -->
+ <div id="thankYouPopup">
+  <p>Thank you for your feedback! &#128522;</p>
+  <!-- You can customize the content of the Thank You pop-up here -->
+</div>
+        </figure>
+        <hr>
+        <hr>
+        <hr>
+        <h1 style="color:red">Thank You &#128515;</h1>
+        <h2 style="color:lime">Visit Again &#128522;</h2>
+        <button type="button" onclick="alert('Thank you')">Exit</button>
+        <div id="contactus">
+        <h1>Contact Us</h1>
+        <p>phone number
+        <br>91+ 7569416600</p>
+        </div>
+        <footer>
+          <p><strong>all &copy; copyrights are owned</strong></p>
+          </footer>
+</ul>
+<button style="float: right; background-color:rgb(255, 255, 255)"><a href="#back">Back to home</a></button>
+<button onclick="getLocation()">Try It</button>
+<script>
+  const x = document.getElementById("demo");
+  
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+      x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+  }
+  
+  function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+  }
+  </script>
+</body>
+</html>
+    
